@@ -77,8 +77,8 @@
                             <!-- Project input-->
                             <div class="form-group">
                             <div class="form-floating mb-3">
-                                <label for="project">Choose Project</label>
-                                <select name="Project" class="form-control" fdprocessedid="9bo1v">
+                                <label for="select">Choose Project</label>
+                                <select name="Project" class="form-control" fdprocessedid="9bo1v" id="select" onchange="removeLabel()">
                                     <option></option>
                                     <option >Web Development</option>
                                     <option>Social Media Manager </option>
@@ -132,7 +132,18 @@
             <div class="container"><small>Copyright &copy; Odd Jobs - Albay 2023</small></div>
         </div>
        
-      
-   
+        <script>
+            function removeLabel() {
+              var select = document.getElementById("select");
+              var label = document.querySelector("label[for='select']");
+            
+              if (select.value !== "") {
+                label.style.display = "none";
+              } else {
+                label.style.display = "block";
+              }
+            }
+            </script>
+       
     </body>
 </html>
