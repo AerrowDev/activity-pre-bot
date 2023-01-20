@@ -83,19 +83,17 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
+                        
                         <form action="https://formsubmit.co/rondacillo20@gmail.com" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" name="Name" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" required />
+                                <input class="form-control" name="Name" type="text" placeholder="Enter your name..." data-sb-validations="required" required />
                                 <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" name="Email" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" required/>
+                                <input class="form-control" name="Email" id="email" type="email"  required/>
                                 <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Project input-->
                             <div class="form-group">
@@ -112,10 +110,8 @@
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" name="Message" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" required></textarea>
+                                <textarea class="form-control" name="Message" id="message" type="text" style="height: 10rem" data-sb-validations="required" required></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
                             <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
                             <input type="hidden" name="_next" value="https://aerrowdev.github.io/activity-pre-bot/thanks.html">
                         </form>
